@@ -20,7 +20,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" ></script>
         <script src="js/scripts.js"></script>
 
-        <script>  let  multiplo = 1;</script>
+        <script> 
+        // multiplo para poder multiplicar las variables de comida existentes
+         let  multiplo = 1;</script>
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -64,13 +66,14 @@
     </header>
 
     <script>
+        //se crean las personas 
         let personas = 6;
     </script>
     <!--icons-->
     <div style="padding: 5%; color: #4577C1;">
             <div class="row align-items-start">
               <div class="col">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
                     <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                   </svg>
                   &nbsp;
@@ -146,7 +149,7 @@
             <h3 style="padding-bottom: 7%;">Ingredientes</h3>
             <script>
                 if(personas != 6){
-                    
+                    multiplo= personas/6; 
                 }
                 let agua = 78;
                 let hornear = 1;
