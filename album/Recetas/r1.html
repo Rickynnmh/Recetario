@@ -20,14 +20,30 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
 
-    <script>
-        // multiplo para poder multiplicar las variables de comida existentes
-        let multiplo = 1;</script>
 
-<script>
-    //se crean las personas 
-    let personas = 6;
-</script>
+
+    <script>
+         // multiplo para poder multiplicar las variables de comida existentes
+         let multiplo = 1;
+        //se crean las personas 
+        let personas = 6;
+        // se crean las variables de las cantidades
+        let agua ;
+        let hornear ; 
+        let maíz ;
+        let harina ; 
+        let aceite ; 
+        let tomates ; 
+        let cebolla ;
+        let ajo ;
+        let serrano ;
+        let cilantro ;
+        let comino ;
+        let knorr ;
+        let chicharron ;
+        let agua2 ;
+        let aceite2 ;
+    </script>
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -66,7 +82,7 @@
 
 
                     </div>
-                    
+
                     <!--icons-->
                     <div style=" color: #4577C1;">
                         <div class="row align-items-start">
@@ -130,135 +146,172 @@
                     <h2 class="fw-bolder mb-0">Recetario Akuma.</h2>
                 </div>
                 <div class="col-lg-8">
-                    <div class="row gx-5 row-cols-1 row-cols-md-2">
+                    <div class="row gx-5 row-cols-1 row-cols-md-1">
                         <div class="col mb-5 h-100">
                             <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
-                                <i class="bi bi-collection"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                    class="bi bi-info-lg" viewBox="0 0 16 16">
+                                    <path
+                                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0Z" />
+                                </svg>
                             </div>
-                            <h2 class="h5">Personas</h2>
-                            <p class="mb-0">6</p>
-                        </div>
-                        <div class="col mb-5 h-100">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
-                                    class="bi bi-building"></i></div>
-                            <h2 class="h5">Featured title</h2>
-                            <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is
-                                just a bit more text.</p>
+                            <p class="mb-0">
+                            <h2 class="h5">Tips</h2> Puedes conseguir la masa de maíz nixtamalizado en algún molino de
+                            maíz, en alguna tortillería o en algún mercado. Si no encuentras, puedes ocupar harina de
+                            maíz.</p>
                         </div>
 
 
                         <div class="col mb-5 mb-md-0 h-100">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
-                                    class="bi bi-toggles2"></i></div>
-                            <h2 class="h5">Featured title</h2>
-                            <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is
-                                just a bit more text.</p>
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-person-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                </svg>
+                            </div>
+                            <input class="form-control" id="inPersonas" type="number" placeholder="6">
+
                         </div>
-                        <div class="col h-100">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
-                                    class="bi bi-toggles2"></i></div>
-                            <h2 class="h5">Featured title</h2>
-                            <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is
-                                just a bit more text.</p>
-                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
+        <script>
+            var inputPer = document.getElementById('inPersonas');
+            inputPer.addEventListener('keyup', (event) => {
+                //console.log(event);
+                var inputPersonas = event.path[0].value;
+                personas = inputPersonas;
+                if (inputPersonas <= 0) {
+                    personas = 6;
+                }
+                //event.path[0].placeholder;
+                caculaCantidades();
+
+            }
+            );
+        </script>
     </section>
     <!-- Testimonial section-->
 
 
     <!-- prueba-->
- <script>
-                if (personas != 6) {
-                    multiplo = personas / 6;
-                }
-                let agua = 78;
-                let hornear = 1;
-                let maíz = 1;
-                let harina = 2;
-                let aceite = 1;
-                let tomates = 8;
-                let cebolla = .5;
-                let ajo = 1;
-                let serrano = 2;
-                let cilantro = 1;
-                let comino = .5;
-                let knorr = 1;
-                let chicharron = 2;
-                let agua2 = 177;
-                let aceite2 = 2;
-            </script>
-   
+    <script>
+        function caculaCantidades() {
+            if (personas != 6) {
+                multiplo = personas / 6;
+                 agua = 78 * multiplo;
+                 hornear = 1 * multiplo;
+                 maíz = 1 * multiplo;
+                 harina = 2 * multiplo;
+                 aceite = 1 * multiplo;
+                 tomates = 8 * multiplo;
+                 cebolla = .5 * multiplo;
+                 ajo = 1 * multiplo;
+                 serrano = 2 * multiplo;
+                 cilantro = 1 * multiplo;
+                 comino = .5 * multiplo;
+                 knorr = 1 * multiplo;
+                 chicharron = 2 * multiplo;
+                 agua2 = 177 * multiplo;
+                 aceite2 = 2 * multiplo;
+            } else {
+                multiplo = 1;
+                agua = 78 * multiplo;
+                 hornear = 1 * multiplo;
+                 maíz = 1 * multiplo;
+                 harina = 2 * multiplo;
+                 aceite = 1 * multiplo;
+                 tomates = 8 * multiplo;
+                 cebolla = .5 * multiplo;
+                 ajo = 1 * multiplo;
+                 serrano = 2 * multiplo;
+                 cilantro = 1 * multiplo;
+                 comino = .5 * multiplo;
+                 knorr = 1 * multiplo;
+                 chicharron = 2 * multiplo;
+                 agua2 = 177 * multiplo;
+                 aceite2 = 2 * multiplo;
+            }
+        }
+        caculaCantidades();
+
+
+    </script>
+
     <div style="text-align:center">
-        
-        <div class="col-lg-4 mb-5 mb-lg-0" style=" width:33%; background-color: #D5D8DC ;  display: inline-block; box-sizing: border-box;">
+
+        <div class="col-lg-4 mb-5 mb-lg-0"
+            style=" width:33%; background-color: #D5D8DC ;  display: inline-block; box-sizing: border-box;">
             <h3 style="padding-bottom: 7%;">Ingredientes</h3>
-           
+
             <div style="text-align:left; margin-left: 12%;">
                 <h4 style="color: #4577C1;">
                     Para la masa:
                 </h4>
                 <p>
-                    <script>document.write(agua * multiplo); </script> ml de agua.
+                    <script>document.write(agua); 
+                    </script> ml de agua.
                 </p>
                 <p>
-                    <script>document.write(hornear * multiplo); </script> cuharada de polvo para hornear.
+                    <script>document.write(hornear); </script> cuharada de polvo para hornear.
                 </p>
                 <p>
-                    <script>document.write(maíz * multiplo); </script> kilogramo de masa de maíz nixtamalizado.
+                    <script>document.write(maíz); </script> kilogramo de masa de maíz nixtamalizado.
                 </p>
                 <p>
-                    <script>document.write(harina * multiplo); </script> cucharadas de harina de trigo.
+                    <script>document.write(harina); </script> cucharadas de harina de trigo.
                 </p>
                 <p>
-                    <script>document.write(aceite * multiplo); </script> cucharada de aceite.
+                    <script>document.write(aceite); </script> cucharada de aceite.
                 </p>
                 <h4 style="color: #4577C1;">
                     Para la salsa verde:
                 </h4>
                 <p>
-                    <script>document.write(tomates * multiplo); </script> tomates verdes.
+                    <script>document.write(tomates); </script> tomates verdes.
                 </p>
                 <p>
-                    <script>document.write(cebolla * multiplo); </script> cebolla blanca.
+                    <script>document.write(cebolla); </script> cebolla blanca.
                 </p>
                 <p>
-                    <script>document.write(ajo * multiplo); </script> diente de ajo.
+                    <script>document.write(ajo); </script> diente de ajo.
                 </p>
                 <p>
-                    <script>document.write(serrano * multiplo); </script> chiles serrano.
+                    <script>document.write(serrano); </script> chiles serrano.
                 </p>
                 <p>
-                    <script>document.write(cilantro * multiplo); </script> ramita de cilantro fresco.
+                    <script>document.write(cilantro); </script> ramita de cilantro fresco.
                 </p>
                 <p>
-                    <script>document.write(comino * multiplo); </script> cucharadita de comino molido.
+                    <script>document.write(comino); </script> cucharadita de comino molido.
                 </p>
                 <p>
-                    <script>document.write(knorr * multiplo); </script> cucharadita de Knorr En Polvo Caldo De
+                    <script>document.write(knorr); </script> cucharadita de Knorr En Polvo Caldo De
                     Vegetales.
                 </p>
                 <p>
-                    <script>document.write(aceite * multiplo); </script> cucharada de aceite.
+                    <script>document.write(aceite); </script> cucharada de aceite.
                 </p>
                 <h4 style="color: #4577C1;">
                     Para las gorditas de chicharrón:
                 </h4>
                 <p>
-                    <script>document.write(chicharron * multiplo); </script> tazas de chicharrón prensado.
+                    <script>document.write(chicharron); </script> tazas de chicharrón prensado.
                 </p>
                 <p>
-                    <script>document.write(agua2 * multiplo); </script> ml de agua.
+                    <script>document.write(agua2); </script> ml de agua.
                 </p>
                 <p>
-                    <script>document.write(aceite2 * multiplo); </script> cucharadas de aceite.
+                    <script>document.write(aceite2); </script> cucharadas de aceite.
                 </p>
 
             </div>
         </div>
-        <div class="col-lg-4 mb-5 mb-lg-0" style=" width: 57%; background-color: #4577C1; padding-top: 2.3%;   display: inline-block; box-sizing: border-box;">
+        <div class="col-lg-4 mb-5 mb-lg-0"
+            style=" width: 57%; background-color: #4577C1; padding-top: 2.3%;   display: inline-block; box-sizing: border-box;">
             <h3 style="color: white;">Método de preparación</h3>
             <div style="text-align:left; margin-left: 12%;">
                 <h4 style="color: #C145B5;">
@@ -330,11 +383,13 @@
     <!-- Footer-->
     <footer class="bg-dark py-4 mt-auto">
         <div class="container px-5">
-            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                <div class="col-auto">
-                    <div class="small m-0 text-white">Copyright &copy; Akuma.</div>
+            <center>
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto">
+                        <div class="small m-0 text-white">Copyright &copy; Akuma.</div>
+                    </div>
                 </div>
-            </div>
+            </center>
         </div>
     </footer>
 
