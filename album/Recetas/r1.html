@@ -15,6 +15,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+     <!-- Core theme CSS (includes Bootstrap)-->
+     <link href="css/r.css" rel="stylesheet" />
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -23,26 +25,26 @@
 
 
     <script>
-         // multiplo para poder multiplicar las variables de comida existentes
-         let multiplo = 1;
+        // multiplo para poder multiplicar las variables de comida existentes
+        let multiplo = 1;
         //se crean las personas 
         let personas = 6;
         // se crean las variables de las cantidades
-        let agua ;
-        let hornear ; 
-        let maíz ;
-        let harina ; 
-        let aceite ; 
-        let tomates ; 
-        let cebolla ;
-        let ajo ;
-        let serrano ;
-        let cilantro ;
-        let comino ;
-        let knorr ;
-        let chicharron ;
-        let agua2 ;
-        let aceite2 ;
+        let agua;
+        let hornear;
+        let maíz;
+        let harina;
+        let aceite;
+        let tomates;
+        let cebolla;
+        let ajo;
+        let serrano;
+        let cilantro;
+        let comino;
+        let knorr;
+        let chicharron;
+        let agua2;
+        let aceite2;
     </script>
 </head>
 
@@ -203,38 +205,38 @@
         function caculaCantidades() {
             if (personas != 6) {
                 multiplo = personas / 6;
-                 agua = 78 * multiplo;
-                 hornear = 1 * multiplo;
-                 maíz = 1 * multiplo;
-                 harina = 2 * multiplo;
-                 aceite = 1 * multiplo;
-                 tomates = 8 * multiplo;
-                 cebolla = .5 * multiplo;
-                 ajo = 1 * multiplo;
-                 serrano = 2 * multiplo;
-                 cilantro = 1 * multiplo;
-                 comino = .5 * multiplo;
-                 knorr = 1 * multiplo;
-                 chicharron = 2 * multiplo;
-                 agua2 = 177 * multiplo;
-                 aceite2 = 2 * multiplo;
+                agua = 78 * multiplo;
+                hornear = 1 * multiplo;
+                maíz = 1 * multiplo;
+                harina = 2 * multiplo;
+                aceite = 1 * multiplo;
+                tomates = 8 * multiplo;
+                cebolla = .5 * multiplo;
+                ajo = 1 * multiplo;
+                serrano = 2 * multiplo;
+                cilantro = 1 * multiplo;
+                comino = .5 * multiplo;
+                knorr = 1 * multiplo;
+                chicharron = 2 * multiplo;
+                agua2 = 177 * multiplo;
+                aceite2 = 2 * multiplo;
             } else {
                 multiplo = 1;
                 agua = 78 * multiplo;
-                 hornear = 1 * multiplo;
-                 maíz = 1 * multiplo;
-                 harina = 2 * multiplo;
-                 aceite = 1 * multiplo;
-                 tomates = 8 * multiplo;
-                 cebolla = .5 * multiplo;
-                 ajo = 1 * multiplo;
-                 serrano = 2 * multiplo;
-                 cilantro = 1 * multiplo;
-                 comino = .5 * multiplo;
-                 knorr = 1 * multiplo;
-                 chicharron = 2 * multiplo;
-                 agua2 = 177 * multiplo;
-                 aceite2 = 2 * multiplo;
+                hornear = 1 * multiplo;
+                maíz = 1 * multiplo;
+                harina = 2 * multiplo;
+                aceite = 1 * multiplo;
+                tomates = 8 * multiplo;
+                cebolla = .5 * multiplo;
+                ajo = 1 * multiplo;
+                serrano = 2 * multiplo;
+                cilantro = 1 * multiplo;
+                comino = .5 * multiplo;
+                knorr = 1 * multiplo;
+                chicharron = 2 * multiplo;
+                agua2 = 177 * multiplo;
+                aceite2 = 2 * multiplo;
             }
         }
         caculaCantidades();
@@ -242,7 +244,7 @@
 
     </script>
 
-    <div style="text-align:center">
+    <div style="text-align:center" class="con">
 
         <div class="col-lg-4 mb-5 mb-lg-0"
             style=" width:33%; background-color: #D5D8DC ;  display: inline-block; box-sizing: border-box;">
@@ -311,71 +313,114 @@
 
             </div>
         </div>
+        <div style="width: 2%; "></div>
         <div class="col-lg-4 mb-5 mb-lg-0"
             style=" width: 57%; background-color: #4577C1; padding-top: 2.3%;   display: inline-block; box-sizing: border-box;">
-            <h3 style="color: white;">Método de preparación</h3>
-            <div style="text-align:left; margin-left: 12%;">
-                <h4 style="color: #C145B5;">
-                    Para la masa:
-                </h4>
-                <p style="color: white;">
-                    <script>document.write(agua); </script> ml de agua.
-                </p>
-                <p style="color: white;">
-                    <script>document.write(hornear); </script> cuharada de polvo para hornear.
-                </p>
-                <p style="color: white;">
-                    <script>document.write(maíz); </script> kilogramo de masa de maíz nixtamalizado.
-                </p>
-                <p style="color: white;">
-                    <script>document.write(harina); </script> cucharadas de harina de trigo.
-                </p>
-                <p style="color: white;">
-                    <script>document.write(aceite); </script> cucharada de aceite.
-                </p>
-                <h4 style="color: #C145B5;">
-                    Para la salsa verde:
-                </h4>
-                <p style="color: white;">
-                    <script>document.write(tomates); </script> tomates verdes.
-                </p>
-                <p style="color: white;">
-                    <script>document.write(cebolla); </script> cebolla blanca.
-                </p>
-                <p style="color: white;">
-                    <script>document.write(ajo); </script> diente de ajo.
-                </p>
-                <p style="color: white;">
-                    <script>document.write(serrano); </script> chiles serrano.
-                </p>
-                <p style="color: white;">
-                    <script>document.write(cilantro); </script> ramita de cilantro fresco.
-                </p>
-                <p style="color: white;">
-                    <script>document.write(comino); </script> cucharadita de comino molido.
-                </p>
-                <p style="color: white;">
-                    <script>document.write(knorr); </script> cucharadita de Knorr En Polvo Caldo De Vegetales.
-                </p>
-                <p style="color: white;">
-                    <script>document.write(aceite); </script> cucharada de aceite.
-                </p>
-                <h4 style="color: #C145B5;">
-                    Para las gorditas de chicharrón:
-                </h4>
-                <p style="color: white;">
-                    <script>document.write(chicharron); </script> tazas de chicharrón prensado.
-                </p>
-                <p style="color: white;">
-                    <script>document.write(agua2); </script> ml de agua.
-                </p>
-                <p style="color: white;">
-                    <script>document.write(aceite2); </script> cucharadas de aceite.
-                </p>
-
+            <div style="color: white; text-align: justify;  margin-left: 10%; margin-right: 10%;" class="" data-componentname="recipeCookingMethod" data-componentview="recipeCookingMethod">
+                <h2
+                    style="text-align: center; padding-bottom: 5%;" class="RecipeCookingMethod-module--recipe-cooking-method__title--1oUi5 recipe-cooking-method__title">
+                    Método de preparación</h2>
+                <div class="RecipeCookingMethod-module--cooking-methods--ZwqZ_ cooking-methods">
+                    <dl class="RecipeCookingMethod-module--cooking-methods__group--weVnm cooking-methods__group">
+                        <dt
+                            class="RecipeCookingMethod-module--cooking-methods__group-title--1eiwU cooking-methods__group-title">
+                            Para la masa:</dt>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="1º passo" aria-label="1º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">1</span>Mezcla
+                            el agua con el polvo para hornear. Mueve vigorosamente para que el polvo se diluya
+                            perfectamente.</dd>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="2º passo" aria-label="2º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">2</span>En
+                            un recipiente hondo coloca la masa junto con el harina, el aceite y la mezcla de agua con
+                            polvo para hornear.</dd>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="3º passo" aria-label="3º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">3</span>Amasa
+                            con ambas manos para que integres todos los ingredientes y para suavizar la masa. Tiene que
+                            quedar suave pero no aguada. Te darás cuenta que está lista cuando puedas formar tortitas
+                            con la masa sin que esta se rompa o se quiebre.</dd>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="4º passo" aria-label="4º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">4</span>Cuando
+                            ya esté lista, déjala en el recipiente, tápalo y déjala reposar durante unos minutos.</dd>
+                    </dl>
+                    <dl class="RecipeCookingMethod-module--cooking-methods__group--weVnm cooking-methods__group">
+                        <dt
+                            class="RecipeCookingMethod-module--cooking-methods__group-title--1eiwU cooking-methods__group-title">
+                            Para la salsa verde:</dt>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="1º passo" aria-label="1º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">1</span>En
+                            un comal a fuego medio asa los tomates, la cebolla, el ajo y el chile por todos lados. Luego
+                            licúalos junto con el cilantro fresco, el comino y el Caldo De Vegetales Knorr®.</dd>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="2º passo" aria-label="2º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">2</span>Calienta
+                            una olla con un poquito de aceite y cuando esté caliente, vacía la salsa y sazona durante 5
+                            minutos. Deja que enfríe un poco antes de servir.</dd>
+                    </dl>
+                    <dl class="RecipeCookingMethod-module--cooking-methods__group--weVnm cooking-methods__group">
+                        <dt
+                            class="RecipeCookingMethod-module--cooking-methods__group-title--1eiwU cooking-methods__group-title">
+                            Para las gorditas de chicharrón</dt>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="1º passo" aria-label="1º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">1</span>Pon
+                            el chicharrón prensado en una olla a fuego alto con una taza de agua. Tapa la olla y deja
+                            que se cocina durante 10 minutos; mueve constantemente para evitar que se queme o se pegue.
+                            Cuando el agua se haya evaporado y el chicharrón comience a estar doradito, apaga el fuego y
+                            deja que el chicharrón repose en la olla tapada durante 10 minutos más.</dd>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="2º passo" aria-label="2º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">2</span>Toma
+                            una bolita de masa de 80 gramos, aproximadamente y amasa para que se forme una esfera
+                            uniforme. Luego, con los nudillos, extiende la masa para que se forme un círculo y haz un
+                            hueco en medio. Coloca una cucharada de chicharrón prensado en el centro y luego cúbrelo con
+                            las orillas de masa hasta que se forme una bolita rellena de chicharrón.</dd>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="3º passo" aria-label="3º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">3</span>Aplana
+                            con las manos hasta que tengas una circunferencia de aproximadamente 10 cm de diámetro y
+                            medio centímetro de grosor. Puedes untarte un poquito de aceite en las manos para evitar que
+                            la masa se te pegue. Repite esta acción con el resto de la masa.</dd>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="4º passo" aria-label="4º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">4</span>Calienta
+                            un comal y coloca un poquito de aceite. Calienta a fuego medio. Cuando esté bien caliente,
+                            cocina las gorditas durante 5-7 minutos por lado o hasta que la masa quede bien cocida y se
+                            dore. Voltea con frecuencia para que se cocine de manera pareja.</dd>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="5º passo" aria-label="5º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">5</span>Cuando
+                            la gordita esté lista, retírala del comal y déjala enfriar durante un minuto. Después,
+                            ábrela con cuidado por la mitad para que el relleno luzca. Si quieres, puedes añadir más
+                            chicharrón prensado para que la gordita quede más gordita.</dd>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="6º passo" aria-label="6º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">6</span>Sirve
+                            inmediatamente con la salsa verde. Si quieres, puedes acompañar con lechuga picada,
+                            cebollita, cilantro fresco y queso rallado.</dd>
+                    </dl>
+                </div>
             </div>
 
         </div>
+
+    </div>
     </div>
     <br />
     <!--se acaba la prueba -->
