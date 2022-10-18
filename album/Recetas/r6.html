@@ -182,7 +182,7 @@
                             </div>
                             <h2 class="h5">Numero de Personas</h2>
                             <input class="form-control" id="inPersonas" type="number" placeholder="4">
-
+                            
                         </div>
 
                     </div>
@@ -190,19 +190,23 @@
             </div>
         </div>
         <script>
-            var inputPer = document.getElementById('inPersonas');
-            inputPer.addEventListener('keyup', (event) => {
+
+var inputPers = document.getElementById('inPersonas');
+            inputPers.addEventListener('keyup', (event) => {
                 //console.log(event);
-                var inputPersonas = event.path[0].value;
-                personas = inputPersonas;
-                if (inputPersonas <= 0) {
+                var inputPer = event.path[0].value;
+                personas = inputPer;
+                if (inputPer <= 0) {
                     personas = num;
                 }
-                //event.path[0].placeholder;
-                caculaCantidades();
+         
 
             }
             );
+
+          
+
+            
         </script>
     </section>
     <!-- Testimonial section-->
@@ -210,64 +214,39 @@
 
     <!-- prueba-->
     <script>
-        function caculaCantidades() {
-            if (personas != num) {
+ if (personas != num) {
                 multiplo = personas / num;
 
-                agua1 * multiplo;
-                res1 * multiplo;
-                cebolla1 * multiplo;
-                ajo1 * multiplo;
-                laurel1 * multiplo;
-
-                chg2 * multiplo;
-                cha2 * multiplo;
-                chc2 * multiplo;
-                jitomates2 * multiplo;
-                cebolla2 * multiplo;
-                ajo2 * multiplo;
-                pimienta2 * multiplo;
-                comino * multiplo;
-                clavo2 * multiplo;
-                laurel2 * multiplo;
-                knorr2 * multiplo;
-
-                cebolla3 * multiplo;
-                cilantro3 * multiplo;
-                limon3 * multiplo;
-                agua * multiplo;
             } else {
                 multiplo = 1;
-
-
-                agua1 * multiplo;
-                res1 * multiplo;
-                cebolla1 * multiplo;
-                ajo1 * multiplo;
-                laurel1 * multiplo;
-
-                chg2 * multiplo;
-                cha2 * multiplo;
-                chc2 * multiplo;
-                jitomates2 * multiplo;
-                cebolla2 * multiplo;
-                ajo2 * multiplo;
-                pimienta2 * multiplo;
-                comino * multiplo;
-                clavo2 * multiplo;
-                laurel2 * multiplo;
-                knorr2 * multiplo;
-
-                cebolla3 * multiplo;
-                cilantro3 * multiplo;
-                limon3 * multiplo;
-                agua * multiplo;
+                
             }
-        }
-        caculaCantidades();
 
+            agua1=  agua1  * multiplo;
+            res1=res1  * multiplo;
+        cebolla1=cebolla1  * multiplo;
+        ajo1=ajo1  * multiplo;
+        laurel1=laurel1  * multiplo;
 
+        chg2=chg2  * multiplo;
+        cha2=cha2  * multiplo;
+        chc2=chc2  * multiplo;
+        jitomates2=jitomates2  * multiplo;
+        cebolla2=cebolla2  * multiplo;
+        ajo2=ajo2  * multiplo;
+        pimienta2=pimienta2  * multiplo;
+        comino=comino  * multiplo;
+        clavo2=clavo2  * multiplo;
+        laurel2=laurel2  * multiplo;
+        knorr2=knorr2  * multiplo;
+
+        cebolla3=cebolla3  * multiplo;
+        cilantro3=cilantro3 * multiplo; 
+        limon3=limon3  * multiplo;
+        agua=agua  * multiplo;
+         
     </script>
+    
 
     <div style="text-align:center" class="con">
 

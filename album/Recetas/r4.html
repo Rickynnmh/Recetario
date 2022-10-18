@@ -176,13 +176,12 @@
             var inputPer = document.getElementById('inPersonas');
             inputPer.addEventListener('keyup', (event) => {
                 //console.log(event);
-                var inputPersonas = event.path[0].value;
-                personas = inputPersonas;
-                if (inputPersonas <= 0) {
+                var inputPer = event.path[0].value;
+                personas = inputPer;
+                if (inputPer <= 0) {
                     personas = num;
                 }
                 //event.path[0].placeholder;
-                caculaCantidades();
 
             }
             );
@@ -193,32 +192,26 @@
 
     <!-- prueba-->
     <script>
-        function caculaCantidades() {
+        
             if (personas != num) {
                 multiplo = personas / num;
 
-                frijoles * multiplo;
-                caldo * multiplo;
-                knorr * multiplo;
-                manteca * multiplo;
-                cebolla * multiplo;
-                queso * multiplo;
-                totopos * multiplo;
 
 
             } else {
                 multiplo = 1;
 
-                frijoles * multiplo;
-                caldo * multiplo;
-                knorr * multiplo;
-                manteca * multiplo;
-                cebolla * multiplo;
-                queso * multiplo;
-                totopos * multiplo;
+                
             }
-        }
-        caculaCantidades();
+
+            frijoles=frijoles * multiplo;
+                caldo=caldo * multiplo;
+                knorr=knorr * multiplo;
+                manteca=manteca * multiplo;
+                cebolla=cebolla * multiplo;
+                queso=queso * multiplo;
+                totopos=totopos * multiplo;
+       
 
 
     </script>
