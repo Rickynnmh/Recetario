@@ -15,6 +15,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/r.css" rel="stylesheet" />
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -23,26 +25,35 @@
 
 
     <script>
-         // multiplo para poder multiplicar las variables de comida existentes
-         let multiplo = 1;
+        let num = 4;
+        // multiplo para poder multiplicar las variables de comida existentes
+        let multiplo = 1;
         //se crean las personas 
-        let personas = 6;
+        let personas = 4;
         // se crean las variables de las cantidades
-        let agua ;
-        let hornear ; 
-        let maíz ;
-        let harina ; 
-        let aceite ; 
-        let tomates ; 
-        let cebolla ;
-        let ajo ;
-        let serrano ;
-        let cilantro ;
-        let comino ;
-        let knorr ;
-        let chicharron ;
-        let agua2 ;
-        let aceite2 ;
+        let agua1 = 2;
+        let res1 = 1;
+        let cebolla1 = .5;
+        let ajo1 = 2;
+        let laurel1 = 1;
+
+        let chg2 = 8;
+        let cha2 = 5;
+        let chc2 = 5;
+        let jitomates2 = 4;
+        let cebolla2 = 1;
+        let ajo2 = 1;
+        let pimienta2 = 2;
+        let comino = .5;
+        let clavo2 = 2;
+        let laurel2 = 3;
+        let knorr2 = 1;
+
+        let cebolla3 = 1;
+        let cilantro3 = 1;
+        let limon3 = 4;
+        let agua = 3;
+
     </script>
 </head>
 
@@ -68,23 +79,22 @@
             <div class="row gx-5 align-items-center justify-content-center">
                 <div class="col-lg-8 col-xl-7 col-xxl-6">
                     <div class="my-5 text-center text-xl-start">
-                        <h1 class="display-5 fw-bolder text-white mb-1">Gordita de chicharrón</h1>
-                        <p style="padding-top: 3%;" class="lead fw-normal text-white-50 mb-4">A veces está bien darte un
-                            gustito y esta
-                            gordita de chicharrón es perfecta para saciar tu antojo. Con nuestra receta te quedará
-                            deliciosa y un poquito más saludable.</p>
+                        <h1 class="display-5 fw-bolder text-white mb-1">Birria casera de res</h1>
+                        <p style="padding-top: 3%;" class="lead fw-normal text-white-50 mb-4">
+                            Uno de los caldos mexicanos más reconfortantes es la birria casera de res. Aprende a hacerla
+                            en casa y disfrútala en días especiales.
+                        </p>
 
                         <p class="lead fw-normal text-white-50 mb-4">¿Sabías qué?
-                            No se sabe con certeza el origen de las gorditas, pero algunos cronistas de la Conquista la
-                            incluyeron en sus narraciones sobre la gastronomía de la época en el centro de México, así
-                            que debe tener origen prehispánico.
+                            La birria es un platillo tradicional de Jalisco y originalmente se prepara con carnero,
+                            aunque en algunas partes de México, sobre todo en el norte, se prepara con carne de res.
                         </p>
 
 
                     </div>
 
                     <!--icons-->
-                    <div style=" color: #4577C1;">
+                    <div style=" color: #4577C1; padding-bottom: 3%;">
                         <div class="row align-items-start">
                             <div class="col-md-auto">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
@@ -105,7 +115,7 @@
                                     <path
                                         d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z" />
                                 </svg>
-                                &nbsp; 50 min
+                                &nbsp; 89 min
                             </div>
                             <div class="col-md-auto">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
@@ -126,13 +136,13 @@
                                         d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
                                 </svg>
                                 &nbsp;
-                                económica
+                                medio
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5"
-                        height="600" width="400" src="../../assets/img/img1.jpg" alt="..." /></div>
+                        height="600" width="400" src="../../assets/img/img6.jpg" alt="..." /></div>
             </div>
         </div>
     </header>
@@ -156,9 +166,9 @@
                                 </svg>
                             </div>
                             <p class="mb-0">
-                            <h2 class="h5">Tips</h2> Puedes conseguir la masa de maíz nixtamalizado en algún molino de
-                            maíz, en alguna tortillería o en algún mercado. Si no encuentras, puedes ocupar harina de
-                            maíz.</p>
+                            <h2 class="h5">Tips</h2> Para que la cocción sea más rápida, puedes cocer la carne en la
+                            olla exprés. Si quieres que la birria quede más picosa, repara más salsa por si quieres
+                            agregarle un poco más a la hora de servir.</p>
                         </div>
 
 
@@ -171,7 +181,7 @@
                                 </svg>
                             </div>
                             <h2 class="h5">Numero de Personas</h2>
-                            <input class="form-control" id="inPersonas" type="number" placeholder="6">
+                            <input class="form-control" id="inPersonas" type="number" placeholder="4">
 
                         </div>
 
@@ -186,7 +196,7 @@
                 var inputPersonas = event.path[0].value;
                 personas = inputPersonas;
                 if (inputPersonas <= 0) {
-                    personas = 6;
+                    personas = num;
                 }
                 //event.path[0].placeholder;
                 caculaCantidades();
@@ -201,40 +211,57 @@
     <!-- prueba-->
     <script>
         function caculaCantidades() {
-            if (personas != 6) {
-                multiplo = personas / 6;
-                 agua = 78 * multiplo;
-                 hornear = 1 * multiplo;
-                 maíz = 1 * multiplo;
-                 harina = 2 * multiplo;
-                 aceite = 1 * multiplo;
-                 tomates = 8 * multiplo;
-                 cebolla = .5 * multiplo;
-                 ajo = 1 * multiplo;
-                 serrano = 2 * multiplo;
-                 cilantro = 1 * multiplo;
-                 comino = .5 * multiplo;
-                 knorr = 1 * multiplo;
-                 chicharron = 2 * multiplo;
-                 agua2 = 177 * multiplo;
-                 aceite2 = 2 * multiplo;
+            if (personas != num) {
+                multiplo = personas / num;
+
+                agua1 * multiplo;
+                res1 * multiplo;
+                cebolla1 * multiplo;
+                ajo1 * multiplo;
+                laurel1 * multiplo;
+
+                chg2 * multiplo;
+                cha2 * multiplo;
+                chc2 * multiplo;
+                jitomates2 * multiplo;
+                cebolla2 * multiplo;
+                ajo2 * multiplo;
+                pimienta2 * multiplo;
+                comino * multiplo;
+                clavo2 * multiplo;
+                laurel2 * multiplo;
+                knorr2 * multiplo;
+
+                cebolla3 * multiplo;
+                cilantro3 * multiplo;
+                limon3 * multiplo;
+                agua * multiplo;
             } else {
                 multiplo = 1;
-                agua = 78 * multiplo;
-                 hornear = 1 * multiplo;
-                 maíz = 1 * multiplo;
-                 harina = 2 * multiplo;
-                 aceite = 1 * multiplo;
-                 tomates = 8 * multiplo;
-                 cebolla = .5 * multiplo;
-                 ajo = 1 * multiplo;
-                 serrano = 2 * multiplo;
-                 cilantro = 1 * multiplo;
-                 comino = .5 * multiplo;
-                 knorr = 1 * multiplo;
-                 chicharron = 2 * multiplo;
-                 agua2 = 177 * multiplo;
-                 aceite2 = 2 * multiplo;
+
+
+                agua1 * multiplo;
+                res1 * multiplo;
+                cebolla1 * multiplo;
+                ajo1 * multiplo;
+                laurel1 * multiplo;
+
+                chg2 * multiplo;
+                cha2 * multiplo;
+                chc2 * multiplo;
+                jitomates2 * multiplo;
+                cebolla2 * multiplo;
+                ajo2 * multiplo;
+                pimienta2 * multiplo;
+                comino * multiplo;
+                clavo2 * multiplo;
+                laurel2 * multiplo;
+                knorr2 * multiplo;
+
+                cebolla3 * multiplo;
+                cilantro3 * multiplo;
+                limon3 * multiplo;
+                agua * multiplo;
             }
         }
         caculaCantidades();
@@ -242,7 +269,7 @@
 
     </script>
 
-    <div style="text-align:center">
+    <div style="text-align:center" class="con">
 
         <div class="col-lg-4 mb-5 mb-lg-0"
             style=" width:33%; background-color: #D5D8DC ;  display: inline-block; box-sizing: border-box;">
@@ -250,132 +277,169 @@
 
             <div style="text-align:left; margin-left: 12%;">
                 <h4 style="color: #4577C1;">
-                    Para la masa:
+                    Para cocer la carne:
                 </h4>
                 <p>
-                    <script>document.write(agua); 
-                    </script> ml de agua.
+                    <script>document.write(agua1); 
+                    </script> litros de agua.
                 </p>
                 <p>
-                    <script>document.write(hornear); </script> cuharada de polvo para hornear.
+                    <script>document.write(res1); </script> kilogramo de carne de res.
                 </p>
                 <p>
-                    <script>document.write(maíz); </script> kilogramo de masa de maíz nixtamalizado.
+                    <script>document.write(
+                            cebolla1
+                        ); </script> cebolla.
                 </p>
                 <p>
-                    <script>document.write(harina); </script> cucharadas de harina de trigo.
+                    <script>document.write(ajo1); </script> dientes de ajo.
                 </p>
                 <p>
-                    <script>document.write(aceite); </script> cucharada de aceite.
+                    <script>document.write(laurel1); </script> hoja de laurel.
                 </p>
+
                 <h4 style="color: #4577C1;">
-                    Para la salsa verde:
+                    Para la salsa:
                 </h4>
+
+
                 <p>
-                    <script>document.write(tomates); </script> tomates verdes.
+                    <script>document.write(chg2); </script> chiles guajillos secos.
                 </p>
                 <p>
-                    <script>document.write(cebolla); </script> cebolla blanca.
+                    <script>document.write(cha2); </script> chiles ancho enteros secos.
                 </p>
                 <p>
-                    <script>document.write(ajo); </script> diente de ajo.
+                    <script>document.write(chc2); </script> chiles cascabel.
                 </p>
                 <p>
-                    <script>document.write(serrano); </script> chiles serrano.
+                    <script>document.write(jitomates2); </script> jitomates.
+                </p>
+
+                <p>
+                    <script>document.write(cebolla2); </script> cebolla pequeña.
                 </p>
                 <p>
-                    <script>document.write(cilantro); </script> ramita de cilantro fresco.
+                    <script>document.write(ajo2); </script> diente de ajo.
+                </p>
+                <p>
+                    <script>document.write(pimienta2); </script> piezas de pimienta gorda entera.
                 </p>
                 <p>
                     <script>document.write(comino); </script> cucharadita de comino molido.
                 </p>
                 <p>
-                    <script>document.write(knorr); </script> cucharadita de Knorr En Polvo Caldo De
-                    Vegetales.
+                    <script>document.write(clavo2); </script> piezas de clavo entero.
                 </p>
                 <p>
-                    <script>document.write(aceite); </script> cucharada de aceite.
+                    <script>document.write(laurel2); </script> hojas de laurel.
                 </p>
+                <p>
+                    <script>document.write(knorr2); </script> cubo de Knorr Jugosa 8 Cubos De Caldo De Costilla De Res.
+                </p>
+
                 <h4 style="color: #4577C1;">
-                    Para las gorditas de chicharrón:
+                    Para la birria casera de res:
                 </h4>
                 <p>
-                    <script>document.write(chicharron); </script> tazas de chicharrón prensado.
+                    <script>document.write(cebolla3); </script> cebolla finamente picada.
                 </p>
                 <p>
-                    <script>document.write(agua2); </script> ml de agua.
+                    <script>document.write(cilantro3); </script> taza de cilantro fresco finamente picado.
                 </p>
                 <p>
-                    <script>document.write(aceite2); </script> cucharadas de aceite.
+                    <script>document.write(limon3); </script>limones agrios.
                 </p>
+
+
 
             </div>
         </div>
+        <div style="width: 2%; "></div>
         <div class="col-lg-4 mb-5 mb-lg-0"
             style=" width: 57%; background-color: #4577C1; padding-top: 2.3%;   display: inline-block; box-sizing: border-box;">
-            <h3 style="color: white;">Método de preparación</h3>
-            <div style="text-align:left; margin-left: 12%;">
-                <h4 style="color: #C145B5;">
-                    Para la masa:
-                </h4>
-                <p style="color: white;">
-                    <script>document.write(agua); </script> ml de agua.
-                </p>
-                <p style="color: white;">
-                    <script>document.write(hornear); </script> cuharada de polvo para hornear.
-                </p>
-                <p style="color: white;">
-                    <script>document.write(maíz); </script> kilogramo de masa de maíz nixtamalizado.
-                </p>
-                <p style="color: white;">
-                    <script>document.write(harina); </script> cucharadas de harina de trigo.
-                </p>
-                <p style="color: white;">
-                    <script>document.write(aceite); </script> cucharada de aceite.
-                </p>
-                <h4 style="color: #C145B5;">
-                    Para la salsa verde:
-                </h4>
-                <p style="color: white;">
-                    <script>document.write(tomates); </script> tomates verdes.
-                </p>
-                <p style="color: white;">
-                    <script>document.write(cebolla); </script> cebolla blanca.
-                </p>
-                <p style="color: white;">
-                    <script>document.write(ajo); </script> diente de ajo.
-                </p>
-                <p style="color: white;">
-                    <script>document.write(serrano); </script> chiles serrano.
-                </p>
-                <p style="color: white;">
-                    <script>document.write(cilantro); </script> ramita de cilantro fresco.
-                </p>
-                <p style="color: white;">
-                    <script>document.write(comino); </script> cucharadita de comino molido.
-                </p>
-                <p style="color: white;">
-                    <script>document.write(knorr); </script> cucharadita de Knorr En Polvo Caldo De Vegetales.
-                </p>
-                <p style="color: white;">
-                    <script>document.write(aceite); </script> cucharada de aceite.
-                </p>
-                <h4 style="color: #C145B5;">
-                    Para las gorditas de chicharrón:
-                </h4>
-                <p style="color: white;">
-                    <script>document.write(chicharron); </script> tazas de chicharrón prensado.
-                </p>
-                <p style="color: white;">
-                    <script>document.write(agua2); </script> ml de agua.
-                </p>
-                <p style="color: white;">
-                    <script>document.write(aceite2); </script> cucharadas de aceite.
-                </p>
-
+            <div class="pre" data-componentname="recipeCookingMethod" data-componentview="recipeCookingMethod">
+                <h2
+                    class="RecipeCookingMethod-module--recipe-cooking-method__title--1oUi5 recipe-cooking-method__title">
+                    Método de preparación</h2>
+                <div class="RecipeCookingMethod-module--cooking-methods--ZwqZ_ cooking-methods">
+                    <dl class="RecipeCookingMethod-module--cooking-methods__group--weVnm cooking-methods__group">
+                        <dt
+                            class="RecipeCookingMethod-module--cooking-methods__group-title--1eiwU cooking-methods__group-title">
+                            Para cocer la carne:</dt>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="1º passo" aria-label="1º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">1</span>Coloca
+                            los dos litros de agua en una olla y pon a cocer la carne con un pedazo de cebolla, dos
+                            dientes de ajo y una hoja de laurel. Déjala a fuego bajo durante 30 minutos. Remueve la
+                            espuma que salga en la superficie del caldo. Deséchala.</dd>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="2º passo" aria-label="2º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">2</span>Una
+                            vez cocida la carne, retira del fuego y deja que repose durante 30 minutos, mientras
+                            preparas la salsa.</dd>
+                    </dl>
+                    <dl class="RecipeCookingMethod-module--cooking-methods__group--weVnm cooking-methods__group">
+                        <dt
+                            class="RecipeCookingMethod-module--cooking-methods__group-title--1eiwU cooking-methods__group-title">
+                            Para la salsa:</dt>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="1º passo" aria-label="1º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">1</span>Desvena
+                            los chiles y remójalos en agua caliente para que estén suavecitos. Déjalos remojando durante
+                            10 minutos por lo menos. ¡No tires el agua donde remojaste los chiles!</dd>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="2º passo" aria-label="2º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">2</span>Pon
+                            los chiles, los jitomates, la cebolla, un diente de ajo, pimienta gorda, comino, clavo y las
+                            hojas de laurel restantes en la licuadora. Licúa hasta obtener una mezcla homogénea.</dd>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="3º passo" aria-label="3º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">3</span>Calienta
+                            una olla con una cucharadita de aceite y cuando esté caliente, agrega salsa la salsa que
+                            licuaste y un poco del caldo de la carne que cociste; luego añade el agua de los chiles y un
+                            cubo de Costilla Jugosa Knorr®. Cocina durante 10 minutos a fuego bajo hasta que empiece a
+                            espesarse.</dd>
+                    </dl>
+                    <dl class="RecipeCookingMethod-module--cooking-methods__group--weVnm cooking-methods__group">
+                        <dt
+                            class="RecipeCookingMethod-module--cooking-methods__group-title--1eiwU cooking-methods__group-title">
+                            Para la birria de res:</dt>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="1º passo" aria-label="1º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">1</span>Ya
+                            que tengas la salsa, retira la cebolla, los ajos y las hojas de laurel del caldo de res y
+                            cuélalo. Después mezcla el caldo, la carne y la salsa.</dd>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="2º passo" aria-label="2º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">2</span>Cocina
+                            a fuego lento por 30 minutos y deja que hierva para que se sazone muy bien.</dd>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="3º passo" aria-label="3º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">3</span>Cuando
+                            la carne ya esté suavecita y el sabor esté en su punto, ¡listo! ¡Tu birria casera de res
+                            está lista!</dd>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="4º passo" aria-label="4º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">4</span>Sirve
+                            con cebolla y cilantro y agrega unas gotas de limón. Puedes acompañar con tortillas
+                            calientitas para que te armes unos tacos.</dd>
+                    </dl>
+                </div>
             </div>
 
         </div>
+
+    </div>
     </div>
     <br />
     <!--se acaba la prueba -->
