@@ -41,7 +41,7 @@
         let carne2 = 1;
         let cha2 = 4;
         let chg2 = 2;
-        
+
     </script>
 </head>
 
@@ -69,12 +69,14 @@
                     <div class="my-5 text-center text-xl-start">
                         <h1 class="display-5 fw-bolder text-white mb-1">Pozole rojo de cerdo</h1>
                         <p style="padding-top: 3%;" class="lead fw-normal text-white-50 mb-4">
-                            Hay muchas variantes de pozole en México pero una de las más populares es el pozole rojo de cerdo, receta del Bajío mexicano. ¡Te decimos paso a paso cómo hacerlo!
+                            Hay muchas variantes de pozole en México pero una de las más populares es el pozole rojo de
+                            cerdo, receta del Bajío mexicano. ¡Te decimos paso a paso cómo hacerlo!
 
                         </p>
 
                         <p class="lead fw-normal text-white-50 mb-4">¿Sabías qué?
-                            El pozole aparentemente es de origen prehispánico, aunque entonces se pudo haber preparado con venado o con conejo en vez de cerdo.
+                            El pozole aparentemente es de origen prehispánico, aunque entonces se pudo haber preparado
+                            con venado o con conejo en vez de cerdo.
 
                         </p>
 
@@ -91,7 +93,7 @@
                                         d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                 </svg>
                                 &nbsp;
-                                <script>document.write(personas); </script>
+                               <span id="pre"></span>
                                 personas
                             </div>
                             <div class="col-md-auto">
@@ -154,8 +156,9 @@
                                 </svg>
                             </div>
                             <p class="mb-0">
-                            <h2 class="h5">Tips</h2> Utiliza huesitos de cerdo para darle aún más sabor al pozole. Retíralos al final.
-                        </p>
+                            <h2 class="h5">Tips</h2> Utiliza huesitos de cerdo para darle aún más sabor al pozole.
+                            Retíralos al final.
+                            </p>
                         </div>
 
 
@@ -168,7 +171,7 @@
                                 </svg>
                             </div>
                             <h2 class="h5">Numero de Personas</h2>
-                            <input class="form-control" id="inPersonas" type="number" placeholder="4">
+                            <input class="form-control" id="inPersonas" type="number" placeholder="6">
 
                         </div>
 
@@ -185,8 +188,27 @@
                 if (inputPersonas <= 0) {
                     personas = num;
                 }
-                //event.path[0].placeholder;
-                
+               
+        if (personas != num) {
+            multiplo = personas / num;
+
+        } else {
+            multiplo = 1;
+
+        }
+
+        document.getElementById('maiz1').innerHTML = (maiz1 * multiplo);
+        document.getElementById('agua1').innerHTML = (agua1 * multiplo);
+        document.getElementById('cal1').innerHTML = (cal1 * multiplo);
+
+        document.getElementById('ajo2').innerHTML = (ajo2 * multiplo);
+        document.getElementById('cebolla2').innerHTML = (cebolla2 * multiplo);
+        document.getElementById('knorr2').innerHTML = (knorr2 * multiplo);
+        document.getElementById('carne2').innerHTML = (carne2 * multiplo);
+        document.getElementById('cha2').innerHTML = (cha2 * multiplo);
+        document.getElementById('chg2').innerHTML = (chg2 * multiplo);
+        document.getElementById('per').innerHTML = (personas);
+
 
             }
             );
@@ -196,29 +218,7 @@
 
 
     <!-- prueba-->
-    <script>
-        
-            if (personas != num) {
-                multiplo = personas / num;
-
-            } else {
-                multiplo = 1;
-
-            }
-
-         maiz1 = maiz1 *multiplo;
-         agua1 = agua1 *multiplo;
-         cal1 = cal1*multiplo;
-
-         ajo2  = ajo2*multiplo;
-         cebolla2 = cebolla2*multiplo;
-         knorr2 =knorr2*multiplo;
-         carne2 =carne2*multiplo;
-         cha2 =cha2*multiplo;
-         chg2 =chg2*multiplo;
-
-
-    </script>
+    
 
     <div style="text-align:center" class="con">
 
@@ -231,14 +231,14 @@
                     Para limpiar el maíz pozolero:
                 </h4>
                 <p>
-                    <script>document.write(maiz1); 
+                    <span id="maiz1"></span>
                     </script> kilogramo de maíz pozolero crudo.
                 </p>
                 <p>
-                    <script>document.write(agua1); </script> litros de agua.
+                    <span id="agua1"></span> litros de agua.
                 </p>
                 <p>
-                    <script>document.write(cal1); </script> cucharadas de cal.
+                    <span id="cal1"></span> cucharadas de cal.
                 </p>
 
 
@@ -246,31 +246,79 @@
                     Para el pozole rojo de cerdo:
                 </h4>
                 <p>
-                    <script>document.write(ajo2); </script> cabeza de ajo pelado.
+                    <span id="ajo2"></span> cabeza de ajo pelado.
                 </p>
                 <p>
-                    <script>document.write(cebolla2); </script> cebolla partida por la mitad.
+                    <span id="cebolla2"></span> cebolla partida por la mitad.
                 </p>
 
                 <p>
-                    <script>document.write(knorr2); </script> Knorr Jugosa 8 Cubos De Caldo De Costilla De Res.
+                    <span id="knorr2"></span> Knorr Jugosa 8 Cubos De Caldo De Costilla De Res.
                 </p>
                 <p>
-                    <script>document.write(carne2); </script> kilogramo de carne de cerdo troceada.
+                    <span id="carne2"></span> kilogramo de carne de cerdo troceada.
                 </p>
                 <p>
-                    <script>document.write(cha2); </script> chiles ancho enteros secos.
+                    <span id="cha2"></span> chiles ancho enteros secos.
                 </p>
                 <p>
-                    <script>document.write(chg2); </script> chiles guajillos secos.
+                    <span id="chg2"></span> chiles guajillos secos.
                 </p>
-               
+
             </div>
         </div>
         <div style="width: 2%; "></div>
         <div class="col-lg-4 mb-5 mb-lg-0"
             style=" width: 57%; background-color: #4577C1; padding-top: 2.3%;   display: inline-block; box-sizing: border-box;">
-            <div class="pre" data-componentname="recipeCookingMethod" data-componentview="recipeCookingMethod"><h2 class="RecipeCookingMethod-module--recipe-cooking-method__title--1oUi5 recipe-cooking-method__title">Método de preparación</h2><div class="RecipeCookingMethod-module--cooking-methods--ZwqZ_ cooking-methods"><dl class="RecipeCookingMethod-module--cooking-methods__group--weVnm cooking-methods__group"><dt class="RecipeCookingMethod-module--cooking-methods__group-title--1eiwU cooking-methods__group-title">Para limpiar el maíz pozolero:</dt><dd class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item"><span alt="1º passo" aria-label="1º passo" class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">1</span>Remoja el maíz crudo en una olla grande con agua tibia. Déjalo reposar durante toda la noche.</dd><dd class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item"><span alt="2º passo" aria-label="2º passo" class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">2</span>Al día siguiente escurre, desecha el agua y vuelve a llenarla con agua limpia y un poco de cal. Pon a hervir y deja que hierva durante 45 minutos o hasta que veas que la piel del maíz se desprende fácilmente.</dd><dd class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item"><span alt="3º passo" aria-label="3º passo" class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">3</span>Cuela el agua (y deséchala), enjuaga el maíz con agua fría y frota los granos para que la piel se desprenda completamente.</dd><dd class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item"><span alt="4º passo" aria-label="4º passo" class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">4</span>Una vez que ya los granos de maíz no tengan piel, retírales la cabecita (la punta amarilla) con un cuchillo pequeño. Lo mejor es hacerlo uno por uno. Una vez listo este proceso, el maíz ya está listo para hacer el pozole.</dd></dl><dl class="RecipeCookingMethod-module--cooking-methods__group--weVnm cooking-methods__group"><dt class="RecipeCookingMethod-module--cooking-methods__group-title--1eiwU cooking-methods__group-title">Para servir el pozole rojo de cerdo:</dt><dd class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item"><span alt="1º passo" aria-label="1º passo" class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">1</span>Sirve una porción en un plato hondo. Procura que esté balanceado de granos de maíz, carne de cerdo y caldo.  Añade lechuga picada, cebolla, rábanos, orégano y unas gotas de limón al gusto. ¡No olvides acompañarlo con tostadas!</dd></dl></div></div>
+            <div class="pre" data-componentname="recipeCookingMethod" data-componentview="recipeCookingMethod">
+                <h2
+                    class="RecipeCookingMethod-module--recipe-cooking-method__title--1oUi5 recipe-cooking-method__title">
+                    Método de preparación</h2>
+                <div class="RecipeCookingMethod-module--cooking-methods--ZwqZ_ cooking-methods">
+                    <dl class="RecipeCookingMethod-module--cooking-methods__group--weVnm cooking-methods__group">
+                        <dt
+                            class="RecipeCookingMethod-module--cooking-methods__group-title--1eiwU cooking-methods__group-title">
+                            Para limpiar el maíz pozolero:</dt>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="1º passo" aria-label="1º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">1</span>Remoja
+                            el maíz crudo en una olla grande con agua tibia. Déjalo reposar durante toda la noche.</dd>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="2º passo" aria-label="2º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">2</span>Al
+                            día siguiente escurre, desecha el agua y vuelve a llenarla con agua limpia y un poco de cal.
+                            Pon a hervir y deja que hierva durante 45 minutos o hasta que veas que la piel del maíz se
+                            desprende fácilmente.</dd>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="3º passo" aria-label="3º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">3</span>Cuela
+                            el agua (y deséchala), enjuaga el maíz con agua fría y frota los granos para que la piel se
+                            desprenda completamente.</dd>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="4º passo" aria-label="4º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">4</span>Una
+                            vez que ya los granos de maíz no tengan piel, retírales la cabecita (la punta amarilla) con
+                            un cuchillo pequeño. Lo mejor es hacerlo uno por uno. Una vez listo este proceso, el maíz ya
+                            está listo para hacer el pozole.</dd>
+                    </dl>
+                    <dl class="RecipeCookingMethod-module--cooking-methods__group--weVnm cooking-methods__group">
+                        <dt
+                            class="RecipeCookingMethod-module--cooking-methods__group-title--1eiwU cooking-methods__group-title">
+                            Para servir el pozole rojo de cerdo:</dt>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="1º passo" aria-label="1º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">1</span>Sirve
+                            una porción en un plato hondo. Procura que esté balanceado de granos de maíz, carne de cerdo
+                            y caldo. Añade lechuga picada, cebolla, rábanos, orégano y unas gotas de limón al gusto. ¡No
+                            olvides acompañarlo con tostadas!</dd>
+                    </dl>
+                </div>
+            </div>
 
 
         </div>

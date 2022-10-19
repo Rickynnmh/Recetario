@@ -95,7 +95,7 @@
                                         d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                 </svg>
                                 &nbsp;
-                                <script>document.write(personas); </script>
+                                <span id="pre"></span>
                                 personas
                             </div>
                             <div class="col-md-auto">
@@ -189,8 +189,31 @@
                 if (inputPersonas <= 0) {
                     personas = num;
                 }
-                //event.path[0].placeholder;
-              
+
+                if (personas != num) {
+                    multiplo = personas / num;
+
+
+                } else {
+                    multiplo = 1;
+
+
+                }
+
+                document.getElementById('pollo1').innerHTML = (pollo1 * multiplo);
+                document.getElementById('cebolla1').innerHTML = (cebolla1 * multiplo);
+                document.getElementById('ajo1').innerHTML = (ajo1 * multiplo);
+                document.getElementById('tomates2').innerHTML = (tomates2 * multiplo);
+                document.getElementById('cebolla2').innerHTML = (cebolla2 * multiplo);
+                document.getElementById('ajo2').innerHTML = (ajo2 * multiplo);
+                document.getElementById('serrano2').innerHTML = (serrano2 * multiplo);
+                document.getElementById('cilantro2').innerHTML = (cilantro2 * multiplo);
+                document.getElementById('knorr2').innerHTML = (knorr2 * multiplo);
+                document.getElementById('aceite2').innerHTML = (aceite2 * multiplo);
+                document.getElementById('aceite3').innerHTML = (aceite3 * multiplo);
+                document.getElementById('maiz3').innerHTML = (maiz3 * multiplo);
+                document.getElementById('queso3').innerHTML = (queso3 * multiplo);
+                document.getElementById('per').innerHTML = personas;
 
             }
             );
@@ -200,35 +223,7 @@
 
 
     <!-- prueba-->
-    <script>
-        
-            if (personas != num) {
-                multiplo = personas / num;
 
-              
-            } else {
-                multiplo = 1;
-
-               
-            }
-
-            pollo1=pollo1 * multiplo;
-                cebolla1=cebolla1 * multiplo;
-                ajo1=ajo1 * multiplo;
-                tomates2=tomates2 * multiplo;
-                cebolla2=cebolla2 * multiplo;
-                ajo2=ajo2 * multiplo;
-                serrano2=serrano2 * multiplo;
-                cilantro2=cilantro2 * multiplo;
-                knorr2=knorr2 * multiplo;
-                aceite2=aceite2 * multiplo;
-                aceite3=aceite3 * multiplo;
-                maiz3=maiz3 * multiplo;
-                queso3=queso3 * multiplo;
-        
-
-
-    </script>
 
     <div style="text-align:center" class="con">
 
@@ -241,52 +236,52 @@
                     Para cocer el pollo:
                 </h4>
                 <p>
-                    <script>document.write(pollo1); 
+                    <span id="pollo1"></span>
                     </script> pechuga de pollo entera con hueso y piel
                 </p>
                 <p>
-                    <script>document.write(cebolla1); </script> cebolla.
+                    <span id="cebolla1"></span> cebolla.
                 </p>
                 <p>
-                    <script>document.write(ajo1); </script> dientes de ajo.
+                    <span id="ajo1"></span> dientes de ajo.
                 </p>
                 <h4 style="color: #4577C1;">
                     Para la salsa verde:
                 </h4>
 
                 <p>
-                    <script>document.write(tomates2); </script> gramos de tomates verdes.
+                    <span id="tomates2"></span> gramos de tomates verdes.
                 </p>
                 <p>
-                    <script>document.write(cebolla2); </script> cebolla cortada en trozos.
+                    <span id="cebolla2"></span> cebolla cortada en trozos.
                 </p>
 
                 <p>
-                    <script>document.write(ajo2); </script> dientes de ajo.
+                    <span id="ajo2"></span> dientes de ajo.
                 </p>
                 <p>
-                    <script>document.write(serrano2); </script> chiles serrano.
+                    <span id="serrano2"></span> chiles serrano.
                 </p>
                 <p>
-                    <script>document.write(cilantro2); </script> ramita de cilantro fresco.
+                    <span id="cilantro2"></span> ramita de cilantro fresco.
                 </p>
                 <p>
-                    <script>document.write(knorr2); </script> cucharadita de Knorr En Polvo Caldo De Pollo 100% Natural.
+                    <span id="knorr2"></span> cucharadita de Knorr En Polvo Caldo De Pollo 100% Natural.
                 </p>
                 <p>
-                    <script>document.write(aceite2); </script> cucharadita de aceite.
+                    <span id="aceite2"></span> cucharadita de aceite.
                 </p>
                 <h4 style="color: #4577C1;">
                     Para las enchiladas verdes con pollo:
                 </h4>
                 <p>
-                    <script>document.write(aceite3); </script> de taza de aceite.
+                    <span id="aceite3"></span> de taza de aceite.
                 </p>
                 <p>
-                    <script>document.write(maiz3); </script> tortillas de maiz.
+                    <span id="maiz3"></span> tortillas de maiz.
                 </p>
                 <p>
-                    <script>document.write(queso3); </script> gramos de queso oaxaca.
+                    <span id="queso3"></span> gramos de queso oaxaca.
                 </p>
 
 
@@ -308,19 +303,22 @@
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="1º passo" aria-label="1º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">1</span>En
-                            una olla coloca el pollo, la cebolla y el ajo. Cubre con agua.</dd>
+                            una olla coloca el pollo, la cebolla y el ajo. Cubre con agua.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="2º passo" aria-label="2º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">2</span>Deja
                             que hierva durante al menos 20 minutos o hasta que el pollo esté completamente cocido.
-                            Retira la espuma que salga en la superficie del caldo y deséchala.</dd>
+                            Retira la espuma que salga en la superficie del caldo y deséchala.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="3º passo" aria-label="3º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">3</span>Cuando
                             el pollo esté completamente cocido, retíralo del caldo y deja que se enfríe un poco. Luego
-                            quita los huesos y la piel, deshébralo y apártalo. Guarda el caldo.</dd>
+                            quita los huesos y la piel, deshébralo y apártalo. Guarda el caldo.
+                        </dd>
                     </dl>
                     <dl class="RecipeCookingMethod-module--cooking-methods__group--weVnm cooking-methods__group">
                         <dt
@@ -331,14 +329,16 @@
                             <span alt="1º passo" aria-label="1º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">1</span>Asa
                             los tomates, la cebolla, los ajos y los chiles en un comal a fuego alto. Voltéalos con
-                            frecuencia para que se asen por todos lados y ten cuidado de que no se quemen de más.</dd>
+                            frecuencia para que se asen por todos lados y ten cuidado de que no se quemen de más.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="2º passo" aria-label="2º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">2</span>Coloca
                             todos los tomates, la cebolla, los ajos y los chiles asados en una licuadora. Agrega el
                             cilantro fresco, el Caldo De Pollo Knorr® 100% Natural En Polvo y un poco de caldo de pollo
-                            en el que cociste las pechugas. Licúa hasta que se forme una mezcla homogénea.</dd>
+                            en el que cociste las pechugas. Licúa hasta que se forme una mezcla homogénea.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="3º passo" aria-label="3º passo"
@@ -346,7 +346,8 @@
                             una cucharadita de aceite en una olla a fuego medio y cuando esté caliente, vacía la salsa.
                             Agrega más caldo hasta que la salsa tenga la consistencia que quieres, no muy espesa pero
                             tampoco muy aguada. Déjala que hierva y cuando suelte el primer hervor, baja el fuego al
-                            mínimo y deja que la salsa se cocine durante al menos 15 minutos. Mueve con frecuencia.</dd>
+                            mínimo y deja que la salsa se cocine durante al menos 15 minutos. Mueve con frecuencia.
+                        </dd>
                     </dl>
                     <dl class="RecipeCookingMethod-module--cooking-methods__group--weVnm cooking-methods__group">
                         <dt
@@ -356,29 +357,34 @@
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="1º passo" aria-label="1º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">1</span>Calienta
-                            una sartén a fuego medio y coloca aceite.</dd>
+                            una sartén a fuego medio y coloca aceite.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="2º passo" aria-label="2º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">2</span>Fríe
-                            ligeramente las tortillas una por una. Deben quedar suaves, no crujientes.</dd>
+                            ligeramente las tortillas una por una. Deben quedar suaves, no crujientes.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="3º passo" aria-label="3º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">3</span>Coloca
                             un poco de pollo deshebrado sobre cada tortilla y enróllalas. Colócalas en un refractario
-                            con la apertura boca abajo.</dd>
+                            con la apertura boca abajo.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="4º passo" aria-label="4º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">4</span>Baña
                             las enchiladas con la salsa verde. Coloca queso encima y lleva al horno durante 5-7 minutos
-                            o hasta que el queso esté derretido</dd>
+                            o hasta que el queso esté derretido
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="5º passo" aria-label="5º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">5</span>¡Listo!
-                            Sirve inmediatamente y disfruta.</dd>
+                            Sirve inmediatamente y disfruta.
+                        </dd>
                     </dl>
                 </div>
             </div>

@@ -103,7 +103,7 @@
                                         d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                 </svg>
                                 &nbsp;
-                                <script>document.write(personas); </script>
+                                <span id="pre"></span>
                                 personas
                             </div>
                             <div class="col-md-auto">
@@ -182,7 +182,7 @@
                             </div>
                             <h2 class="h5">Numero de Personas</h2>
                             <input class="form-control" id="inPersonas" type="number" placeholder="4">
-                            
+
                         </div>
 
                     </div>
@@ -191,7 +191,7 @@
         </div>
         <script>
 
-var inputPers = document.getElementById('inPersonas');
+            var inputPers = document.getElementById('inPersonas');
             inputPers.addEventListener('keyup', (event) => {
                 //console.log(event);
                 var inputPer = event.path[0].value;
@@ -199,54 +199,55 @@ var inputPers = document.getElementById('inPersonas');
                 if (inputPer <= 0) {
                     personas = num;
                 }
-         
+
+
+                if (personas != num) {
+                    multiplo = personas / num;
+
+                } else {
+                    multiplo = 1;
+
+                }
+
+                document.getElementById('agua1').innerHTML = (agua1 * multiplo);
+                document.getElementById('res1').innerHTML = (res1 * multiplo);
+                document.getElementById('cebolla1').innerHTML = (cebolla1 * multiplo);
+                document.getElementById('ajo1').innerHTML = (ajo1 * multiplo);
+                document.getElementById('laurel1').innerHTML = (laurel1 * multiplo);
+
+                document.getElementById('chg2').innerHTML = (chg2 * multiplo);
+                document.getElementById('cha2').innerHTML = (cha2 * multiplo);
+                document.getElementById('chc2').innerHTML = (chc2 * multiplo);
+                document.getElementById('jitomates2').innerHTML = (jitomates2 * multiplo);
+                document.getElementById('cebolla2').innerHTML = (cebolla2 * multiplo);
+                document.getElementById('ajo2').innerHTML = (ajo2 * multiplo);
+                document.getElementById('pimienta2').innerHTML = (pimienta2 * multiplo);
+                document.getElementById('comino').innerHTML = (comino * multiplo);
+                document.getElementById('clavo2').innerHTML = (clavo2 * multiplo);
+                document.getElementById('laurel2').innerHTML = (laurel2 * multiplo);
+                document.getElementById('knorr2').innerHTML = (knorr2 * multiplo);
+
+                document.getElementById('cebolla3').innerHTML = (cebolla3 * multiplo);
+                document.getElementById('cilantro3').innerHTML = (cilantro3 * multiplo);
+                document.getElementById('limon3').innerHTML = (limon3 * multiplo);
+                document.getElementById('agua').innerHTML = (agua * multiplo);
+                document.getElementById('per').innerHTML = personas;
+
 
             }
             );
 
-          
 
-            
+
+
         </script>
     </section>
     <!-- Testimonial section-->
 
 
     <!-- prueba-->
-    <script>
- if (personas != num) {
-                multiplo = personas / num;
 
-            } else {
-                multiplo = 1;
-                
-            }
 
-            agua1=  agua1  * multiplo;
-            res1=res1  * multiplo;
-        cebolla1=cebolla1  * multiplo;
-        ajo1=ajo1  * multiplo;
-        laurel1=laurel1  * multiplo;
-
-        chg2=chg2  * multiplo;
-        cha2=cha2  * multiplo;
-        chc2=chc2  * multiplo;
-        jitomates2=jitomates2  * multiplo;
-        cebolla2=cebolla2  * multiplo;
-        ajo2=ajo2  * multiplo;
-        pimienta2=pimienta2  * multiplo;
-        comino=comino  * multiplo;
-        clavo2=clavo2  * multiplo;
-        laurel2=laurel2  * multiplo;
-        knorr2=knorr2  * multiplo;
-
-        cebolla3=cebolla3  * multiplo;
-        cilantro3=cilantro3 * multiplo; 
-        limon3=limon3  * multiplo;
-        agua=agua  * multiplo;
-         
-    </script>
-    
 
     <div style="text-align:center" class="con">
 
@@ -259,22 +260,20 @@ var inputPers = document.getElementById('inPersonas');
                     Para cocer la carne:
                 </h4>
                 <p>
-                    <script>document.write(agua1); 
+                    <span id="agua1"></span>
                     </script> litros de agua.
                 </p>
                 <p>
-                    <script>document.write(res1); </script> kilogramo de carne de res.
+                    <span id="res1"></span> kilogramo de carne de res.
                 </p>
                 <p>
-                    <script>document.write(
-                            cebolla1
-                        ); </script> cebolla.
+                    <span id="cebolla1"></span> cebolla.
                 </p>
                 <p>
-                    <script>document.write(ajo1); </script> dientes de ajo.
+                    <span id="ajo1"></span> dientes de ajo.
                 </p>
                 <p>
-                    <script>document.write(laurel1); </script> hoja de laurel.
+                    <span id="laurel1"></span> hoja de laurel.
                 </p>
 
                 <h4 style="color: #4577C1;">
@@ -283,51 +282,51 @@ var inputPers = document.getElementById('inPersonas');
 
 
                 <p>
-                    <script>document.write(chg2); </script> chiles guajillos secos.
+                    <span id="chg2"></span> chiles guajillos secos.
                 </p>
                 <p>
-                    <script>document.write(cha2); </script> chiles ancho enteros secos.
+                    <span id="cha2"></span> chiles ancho enteros secos.
                 </p>
                 <p>
-                    <script>document.write(chc2); </script> chiles cascabel.
+                    <span id="chc2"></span> chiles cascabel.
                 </p>
                 <p>
-                    <script>document.write(jitomates2); </script> jitomates.
+                    <span id="jitomates2"></span> jitomates.
                 </p>
 
                 <p>
-                    <script>document.write(cebolla2); </script> cebolla pequeña.
+                    <span id="cebolla2"></span> cebolla pequeña.
                 </p>
                 <p>
-                    <script>document.write(ajo2); </script> diente de ajo.
+                    <span id="ajo2"></span> diente de ajo.
                 </p>
                 <p>
-                    <script>document.write(pimienta2); </script> piezas de pimienta gorda entera.
+                    <span id="pimienta2"></span> piezas de pimienta gorda entera.
                 </p>
                 <p>
-                    <script>document.write(comino); </script> cucharadita de comino molido.
+                    <span id="comino"></span> cucharadita de comino molido.
                 </p>
                 <p>
-                    <script>document.write(clavo2); </script> piezas de clavo entero.
+                    <span id="clavo2"></span> piezas de clavo entero.
                 </p>
                 <p>
-                    <script>document.write(laurel2); </script> hojas de laurel.
+                    <span id="laurel2"></span> hojas de laurel.
                 </p>
                 <p>
-                    <script>document.write(knorr2); </script> cubo de Knorr Jugosa 8 Cubos De Caldo De Costilla De Res.
+                    <span id="knorr2"></span> cubo de Knorr Jugosa 8 Cubos De Caldo De Costilla De Res.
                 </p>
 
                 <h4 style="color: #4577C1;">
                     Para la birria casera de res:
                 </h4>
                 <p>
-                    <script>document.write(cebolla3); </script> cebolla finamente picada.
+                    <span id="cebolla3"></span> cebolla finamente picada.
                 </p>
                 <p>
-                    <script>document.write(cilantro3); </script> taza de cilantro fresco finamente picado.
+                    <span id="cilantro3"></span> taza de cilantro fresco finamente picado.
                 </p>
                 <p>
-                    <script>document.write(limon3); </script>limones agrios.
+                    <span id="limon3"></span> limones agrios.
                 </p>
 
 
@@ -352,13 +351,15 @@ var inputPers = document.getElementById('inPersonas');
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">1</span>Coloca
                             los dos litros de agua en una olla y pon a cocer la carne con un pedazo de cebolla, dos
                             dientes de ajo y una hoja de laurel. Déjala a fuego bajo durante 30 minutos. Remueve la
-                            espuma que salga en la superficie del caldo. Deséchala.</dd>
+                            espuma que salga en la superficie del caldo. Deséchala.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="2º passo" aria-label="2º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">2</span>Una
                             vez cocida la carne, retira del fuego y deja que repose durante 30 minutos, mientras
-                            preparas la salsa.</dd>
+                            preparas la salsa.
+                        </dd>
                     </dl>
                     <dl class="RecipeCookingMethod-module--cooking-methods__group--weVnm cooking-methods__group">
                         <dt
@@ -369,13 +370,15 @@ var inputPers = document.getElementById('inPersonas');
                             <span alt="1º passo" aria-label="1º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">1</span>Desvena
                             los chiles y remójalos en agua caliente para que estén suavecitos. Déjalos remojando durante
-                            10 minutos por lo menos. ¡No tires el agua donde remojaste los chiles!</dd>
+                            10 minutos por lo menos. ¡No tires el agua donde remojaste los chiles!
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="2º passo" aria-label="2º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">2</span>Pon
                             los chiles, los jitomates, la cebolla, un diente de ajo, pimienta gorda, comino, clavo y las
-                            hojas de laurel restantes en la licuadora. Licúa hasta obtener una mezcla homogénea.</dd>
+                            hojas de laurel restantes en la licuadora. Licúa hasta obtener una mezcla homogénea.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="3º passo" aria-label="3º passo"
@@ -383,7 +386,8 @@ var inputPers = document.getElementById('inPersonas');
                             una olla con una cucharadita de aceite y cuando esté caliente, agrega salsa la salsa que
                             licuaste y un poco del caldo de la carne que cociste; luego añade el agua de los chiles y un
                             cubo de Costilla Jugosa Knorr®. Cocina durante 10 minutos a fuego bajo hasta que empiece a
-                            espesarse.</dd>
+                            espesarse.
+                        </dd>
                     </dl>
                     <dl class="RecipeCookingMethod-module--cooking-methods__group--weVnm cooking-methods__group">
                         <dt
@@ -394,24 +398,28 @@ var inputPers = document.getElementById('inPersonas');
                             <span alt="1º passo" aria-label="1º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">1</span>Ya
                             que tengas la salsa, retira la cebolla, los ajos y las hojas de laurel del caldo de res y
-                            cuélalo. Después mezcla el caldo, la carne y la salsa.</dd>
+                            cuélalo. Después mezcla el caldo, la carne y la salsa.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="2º passo" aria-label="2º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">2</span>Cocina
-                            a fuego lento por 30 minutos y deja que hierva para que se sazone muy bien.</dd>
+                            a fuego lento por 30 minutos y deja que hierva para que se sazone muy bien.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="3º passo" aria-label="3º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">3</span>Cuando
                             la carne ya esté suavecita y el sabor esté en su punto, ¡listo! ¡Tu birria casera de res
-                            está lista!</dd>
+                            está lista!
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="4º passo" aria-label="4º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">4</span>Sirve
                             con cebolla y cilantro y agrega unas gotas de limón. Puedes acompañar con tortillas
-                            calientitas para que te armes unos tacos.</dd>
+                            calientitas para que te armes unos tacos.
+                        </dd>
                     </dl>
                 </div>
             </div>

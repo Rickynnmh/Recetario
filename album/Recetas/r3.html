@@ -89,7 +89,7 @@
                                         d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                 </svg>
                                 &nbsp;
-                                <script>document.write(personas); </script>
+                                <span id="pre"></span>
                                 personas
                             </div>
                             <div class="col-md-auto">
@@ -184,8 +184,26 @@
                 if (inputPersonas <= 0) {
                     personas = num;
                 }
-                //event.path[0].placeholder;
-               
+                if (personas != num) {
+                    multiplo = personas / num;
+
+
+                } else {
+                    multiplo = 1;
+
+
+                }
+
+                document.getElementById('chocolate').innerHTML = (chocolate * multiplo);
+                document.getElementById('mantequilla').innerHTML = (mantequilla * multiplo);
+                document.getElementById('harina').innerHTMLa = (harina * multiplo);
+                document.getElementById('maiz').innerHTML = (maiz * multiplo);
+                document.getElementById('azucar').innerHTML = (azucar * multiplo);
+                document.getElementById('huevos').innerHTML = (huevos * multiplo);
+                document.getElementById('yemas').innerHTML = (yemas * multiplo);
+                document.getElementById('vainilla').innerHTML = (vainilla * multiplo);
+                document.getElementById('per').innerHTML = personas;
+
 
             }
             );
@@ -195,30 +213,7 @@
 
 
     <!-- prueba-->
-    <script>
-      
-            if (personas != num) {
-                multiplo = personas / num;
 
-              
-            } else {
-                multiplo = 1;
-
-                
-            }
-
-            chocolate=chocolate * multiplo;
-                mantequilla=mantequilla * multiplo;
-                harina=harina * multiplo;
-                maiz=maiz * multiplo;
-                azucar=azucar * multiplo;
-                huevos=huevos * multiplo;
-                yemas=yemas * multiplo;
-                vainilla=vainilla * multiplo;
-      
-
-
-    </script>
 
     <div style="text-align:center" class="con">
 
@@ -229,29 +224,29 @@
             <div style="text-align:left; margin-left: 12%;">
 
                 <p>
-                    <script>document.write(chocolate); </script> gramos de chocolate semiamargo cortado en trozos.
+                    <span id="chocolate"></span> gramos de chocolate semiamargo cortado en trozos.
                 </p>
                 <p>
-                    <script>document.write(mantequilla); </script> cucharadas de mantequilla.
+                    <span id="mantequilla"></span> cucharadas de mantequilla.
                 </p>
                 <p>
-                    <script>document.write(harina); </script>  de taza de harina.
+                    <span id="harina"></span> de taza de harina.
                 </p>
                 <p>
-                    <script>document.write(maiz); </script> de taza de Maizena Regular Fécula De Maíz Natural.
+                    <span id="maiz"></span> de taza de Maizena Regular Fécula De Maíz Natural.
                 </p>
                 <p>
-                    <script>document.write(azucar); </script> taza de azúcar glass.
+                    <span id="azucar"></span> taza de azúcar glass.
                 </p>
 
                 <p>
-                    <script>document.write(huevos); </script> huevos.
+                    <span id="huevos"></span> huevos.
                 </p>
                 <p>
-                    <script>document.write(yemas); </script> yemas de huevo.
+                    <span id="yemas"></span> yemas de huevo.
                 </p>
                 <p>
-                    <script>document.write(vainilla); </script> cucharadita de extracto de vainilla natural.
+                    <span id="vainilla"></span> cucharadita de extracto de vainilla natural.
                 </p>
 
 
@@ -274,41 +269,48 @@
                             <span alt="1º passo" aria-label="1º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">1</span>Primero
                             engrasa con mantequilla todos los moldes individuales donde harás el pastel tibio de
-                            chocolate y precalienta el horno a 200ºC.</dd>
+                            chocolate y precalienta el horno a 200ºC.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="2º passo" aria-label="2º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">2</span>Derrite
                             el chocolate junto con la mantequilla. Lo puedes hacer en el horno de microondas o a baño
-                            maría.</dd>
+                            maría.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="3º passo" aria-label="3º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">3</span>Con
                             un globo batidor, bate el chocolate junto con la mantequilla. Luego agrega poco a poco el
-                            azúcar glass, luego el harina y la Fécula De Maíz Maizena® sin dejar de batir.</dd>
+                            azúcar glass, luego el harina y la Fécula De Maíz Maizena® sin dejar de batir.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="4º passo" aria-label="4º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">4</span>Agrega
                             uno a uno los huevos y luego las yemas. Sigue batiendo con el globo batidor para incorporar
-                            todo a la perfección. Después añade el extracto de vainilla. Integra bien.</dd>
+                            todo a la perfección. Después añade el extracto de vainilla. Integra bien.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="5º passo" aria-label="5º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">5</span>Vierte
-                            la mezcla en todos los moldes individuales. Déjalos a ¾ de su capacidad, no los llenes.</dd>
+                            la mezcla en todos los moldes individuales. Déjalos a ¾ de su capacidad, no los llenes.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="6º passo" aria-label="6º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">6</span>Hornea
-                            durante 14 minutos a 220ºC.</dd>
+                            durante 14 minutos a 220ºC.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="7º passo" aria-label="7º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">7</span>Sirve
                             inmediatamente. Decora con un poco de azúcar glass, frambuesas frescas y una hoja de menta o
-                            hierbabuena fresca.</dd>
+                            hierbabuena fresca.
+                        </dd>
                     </dl>
                 </div>
             </div>

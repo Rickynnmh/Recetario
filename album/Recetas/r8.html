@@ -189,28 +189,48 @@
                                 </svg>
                             </div>
                             <h2 class="h5">Numero de Personas</h2>
-                            <input class="form-control" id="inPersonas" type="number" placeholder="4">
+                            <input class="form-control" class="inPersonas" onkeyup="calcula();" id="inPersonas"
+                                type="number" placeholder="4">
+                            <span id="idSpan"></span>
 
                         </div>
+                        <script>
+                            function calcula() {
+                                var per = 0;
+                                $(".inPersonas").each(function () {
+                                    if (isNaN(parseInt($(this).val()))) {
+                                        per = 0;
+                                    } else {
+                                        per = parseInt($(this).val());
+                                    }
+
+                                    if (inputPersonas <= 0) {
+                                        personas = num;
+                                    }
+                                });
+                                console.log(personas);
+                            }
+                        </script>
 
                     </div>
                 </div>
             </div>
         </div>
         <script>
-            var inputPer = document.getElementById('inPersonas');
+            /*var inputPer = document.getElementById('inPersonas');
             inputPer.addEventListener('keyup', (event) => {
                 //console.log(event);
                 var inputPersonas = event.path[0].value;
                 personas = inputPersonas;
+                console.log(personas);
                 if (inputPersonas <= 0) {
                     personas = num;
                 }
                 //event.path[0].placeholder;
-                
+
 
             }
-            );
+            );*/
         </script>
     </section>
     <!-- Testimonial section-->
@@ -218,41 +238,41 @@
 
     <!-- prueba-->
     <script>
-        
-            if (personas != num) {
-                multiplo = personas / num;
 
-            } else {
-                multiplo = 1;
+        if (personas != num) {
+            multiplo = personas / num;
 
-            }
+        } else {
+            multiplo = 1;
 
-            cebolla=cebolla * multiplo;
-                ajo=ajo * multiplo;
-                chiles=chiles * multiplo;
-                knorr=knorr * multiplo;
-                aceite=aceite * multiplo;
-                comino=comino * multiplo;
-                clavos=clavos * multiplo;
-                oregano=oregano * multiplo;
-                laurel=laurel * multiplo;
-                chile=chile * multiplo;
-                ajonjoli=ajonjoli * multiplo;
-                ajo2=ajo2 * multiplo;
-                pimienta=pimienta * multiplo;
-                clavo2=clavo2 * multiplo;
-                vinagre=vinagre * multiplo;
-                knorr2=knorr2 * multiplo;
-                cebolla2=cebolla2 * multiplo;
-                cebollaMorada=cebollaMorada * multiplo;
-                vinagre2=vinagre2 * multiplo;
-                agua=agua * multiplo;
-                knorr3=knorr3 * multiplo;
-                oregano2=oregano2 * multiplo;
-                frijoles=frijoles * multiplo;
-                bolillos=bolillos * multiplo;
-                carnitas=carnitas * multiplo;
-                rabanos=rabanos * multiplo;
+        }
+
+        cebolla = cebolla * multiplo;
+        ajo = ajo * multiplo;
+        chiles = chiles * multiplo;
+        knorr = knorr * multiplo;
+        aceite = aceite * multiplo;
+        comino = comino * multiplo;
+        clavos = clavos * multiplo;
+        oregano = oregano * multiplo;
+        laurel = laurel * multiplo;
+        chile = chile * multiplo;
+        ajonjoli = ajonjoli * multiplo;
+        ajo2 = ajo2 * multiplo;
+        pimienta = pimienta * multiplo;
+        clavo2 = clavo2 * multiplo;
+        vinagre = vinagre * multiplo;
+        knorr2 = knorr2 * multiplo;
+        cebolla2 = cebolla2 * multiplo;
+        cebollaMorada = cebollaMorada * multiplo;
+        vinagre2 = vinagre2 * multiplo;
+        agua = agua * multiplo;
+        knorr3 = knorr3 * multiplo;
+        oregano2 = oregano2 * multiplo;
+        frijoles = frijoles * multiplo;
+        bolillos = bolillos * multiplo;
+        carnitas = carnitas * multiplo;
+        rabanos = rabanos * multiplo;
 
 
     </script>
@@ -367,7 +387,8 @@
         <div style="width: 2%; "></div>
         <div class="col-lg-4 mb-5 mb-lg-0"
             style=" width: 57%; background-color: #4577C1; padding-top: 2.3%;   display: inline-block; box-sizing: border-box;">
-            <div style="color: white; text-align: justify;  margin-left: 10%; margin-right: 10%;" class="pre" data-componentname="recipeCookingMethod" data-componentview="recipeCookingMethod">
+            <div style="color: white; text-align: justify;  margin-left: 10%; margin-right: 10%;" class="pre"
+                data-componentname="recipeCookingMethod" data-componentview="recipeCookingMethod">
                 <h2
                     class="RecipeCookingMethod-module--recipe-cooking-method__title--1oUi5 recipe-cooking-method__title">
                     Método de preparación</h2>
@@ -381,7 +402,8 @@
                             <span alt="1º passo" aria-label="1º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">1</span>Asa
                             la cebolla, el ajo y el chile de árbol. Luego, licúa esto con el Caldillo De Tomate Rojo
-                            Knorr®.</dd>
+                            Knorr®.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="2º passo" aria-label="2º passo"
@@ -389,7 +411,8 @@
                             una olla con un poquito de aceite. Cuando esté caliente, vierte la mezcla anterior y
                             condimenta con comino, clavo, orégano y laurel. Deja que hierva durante 10 minutos
                             aproximadamente a fuego bajo. No debe quedar muy caldosa sino levemente espesa. Cuando esté
-                            lista, apártala pero procura que se mantega caliente.</dd>
+                            lista, apártala pero procura que se mantega caliente.
+                        </dd>
                     </dl>
                     <dl class="RecipeCookingMethod-module--cooking-methods__group--weVnm cooking-methods__group">
                         <dt
@@ -400,19 +423,22 @@
                             <span alt="1º passo" aria-label="1º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">1</span>Coloca
                             3 tazas de agua a hervir. Luego agrega los chiles y hiérvelos durante 5 minutos. Apágale al
-                            fuego pasado el tiempo y deja que los chiles reposen en el agua unos 10 minutos.</dd>
+                            fuego pasado el tiempo y deja que los chiles reposen en el agua unos 10 minutos.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="2º passo" aria-label="2º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">2</span>Licúa
                             los chiles hervidos junto el ajonjolí tostado, el ajo, las pimientas, los clavos, el vinagre
                             y medio cubito de Knorr® Tomate. Puedes agregar un poco de agua donde se remojaron los
-                            chiles para facilitar el licuado.</dd>
+                            chiles para facilitar el licuado.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="3º passo" aria-label="3º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">3</span>Cuela
-                            la salsa licuada y ¡listo!</dd>
+                            la salsa licuada y ¡listo!
+                        </dd>
                     </dl>
                     <dl class="RecipeCookingMethod-module--cooking-methods__group--weVnm cooking-methods__group">
                         <dt
@@ -423,13 +449,15 @@
                             <span alt="1º passo" aria-label="1º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">1</span>Filetea
                             las cebollas (que no quede tan fina) y luego mézclalas con el vinagre, el agua, el Caldo De
-                            Vegetales Knorr® 100% Natural En Polvo y el orégano.</dd>
+                            Vegetales Knorr® 100% Natural En Polvo y el orégano.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="2º passo" aria-label="2º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">2</span>Déjalas
                             reposar durante al menos media hora. Puedes prepararlas antes y mantenerlas en el
-                            refrigerador. Si las dejas toda la noche, quedarán mejor.</dd>
+                            refrigerador. Si las dejas toda la noche, quedarán mejor.
+                        </dd>
                     </dl>
                     <dl class="RecipeCookingMethod-module--cooking-methods__group--weVnm cooking-methods__group">
                         <dt
@@ -440,29 +468,34 @@
                             <span alt="1º passo" aria-label="1º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">1</span>Corta
                             el pan por la mitad, quítale el migajón y añade los frijoles refritos en ambos lados, a tu
-                            gusto.</dd>
+                            gusto.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="2º passo" aria-label="2º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">2</span>Luego,
-                            rellena de manera generosa con las carnitas.</dd>
+                            rellena de manera generosa con las carnitas.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="3º passo" aria-label="3º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">3</span>Coloca
                             la torta en un plato hondo y cubre con la salsa. Deja reposar unos minutos para que penetre
-                            el sabor.</dd>
+                            el sabor.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="4º passo" aria-label="4º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">4</span>Después,
                             adorna con las cebollas encurtidas y rabanitos. Sirve junto a la salsa picante para que cada
-                            comensal le ponga la cantidad de salsa que quiera.</dd>
+                            comensal le ponga la cantidad de salsa que quiera.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="5º passo" aria-label="5º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">5</span>¡Listo!
-                            Disfruta muchísimo tu torta ahogada.</dd>
+                            Disfruta muchísimo tu torta ahogada.
+                        </dd>
                     </dl>
                 </div>
             </div>

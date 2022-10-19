@@ -87,7 +87,7 @@
                                         d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                 </svg>
                                 &nbsp;
-                                <script>document.write(personas); </script>
+                                <span id="per"></span>
                                 personas
                             </div>
                             <div class="col-md-auto">
@@ -173,15 +173,52 @@
             </div>
         </div>
         <script>
+            let f ;
+            let c;
+            let k;
+            let m;
+            let ce;
+            let q;
+            let t;
+
             var inputPer = document.getElementById('inPersonas');
             inputPer.addEventListener('keyup', (event) => {
-                //console.log(event);
+
                 var inputPer = event.path[0].value;
                 personas = inputPer;
                 if (inputPer <= 0) {
                     personas = num;
+
+
                 }
-                //event.path[0].placeholder;
+                //console.log(personas);
+                if (personas != num) {
+                    multiplo = personas / num;
+
+
+
+                } else {
+                    multiplo = 1;
+
+
+                }
+
+                f = frijoles * multiplo;
+                c = caldo * multiplo;
+                k = knorr * multiplo;
+                m = manteca * multiplo;
+                ce = cebolla * multiplo;
+                q = queso * multiplo;
+                t = totopos * multiplo;
+
+                document.getElementById('fri').innerHTML = f;
+                document.getElementById('cal').innerHTML = c;
+                document.getElementById('knorr').innerHTML = k;
+                document.getElementById('queso').innerHTML = q;
+                document.getElementById('totopos').innerHTML = t;
+                document.getElementById('manteca').innerHTML = m;
+                document.getElementById('cebolla').innerHTML = ce;
+                document.getElementById('per').innerHTML = personas;
 
             }
             );
@@ -191,30 +228,7 @@
 
 
     <!-- prueba-->
-    <script>
-        
-            if (personas != num) {
-                multiplo = personas / num;
 
-
-
-            } else {
-                multiplo = 1;
-
-                
-            }
-
-            frijoles=frijoles * multiplo;
-                caldo=caldo * multiplo;
-                knorr=knorr * multiplo;
-                manteca=manteca * multiplo;
-                cebolla=cebolla * multiplo;
-                queso=queso * multiplo;
-                totopos=totopos * multiplo;
-       
-
-
-    </script>
 
     <div style="text-align:center" class="con">
 
@@ -225,28 +239,28 @@
             <div style="text-align:left; margin-left: 12%;">
 
                 <p>
-                    <script>document.write(frijoles); 
-                    </script> de cebolla.
+                    <span id="fri"></span>
+                    </script> tazas de frijoles negros cocidos
                 </p>
                 <p>
-                    <script>document.write(caldo); </script> tazas de frijoles negros cocidos.
+                    <span id="cal"></span> tazas de caldo de frijol.
                 </p>
                 <p>
-                    <script>document.write(knorr); </script> tazas de caldo de frijol.
-                </p>
-                <p>
-                    <script>document.write(manteca); </script> cucharadita de Knorr En Polvo Caldo De Vegetales 100 %
+                    <span id="knorr"></span> cucharadita de Knorr En Polvo Caldo De Vegetales 100 %
                     Natural.
                 </p>
                 <p>
-                    <script>document.write(cebolla); </script> cucharadas de cebolla finamente picada.
+                    <span id="manteca"></span> </script> kg de manteca.
+                </p>
+                <p>
+                    <span id="cebolla"></span> cucharadas de cebolla finamente picada.
                 </p>
 
                 <p>
-                    <script>document.write(queso); </script> cucharadas de queso fresco rallado.
+                    <span id="queso"></span> cucharadas de queso fresco rallado.
                 </p>
                 <p>
-                    <script>document.write(totopos); </script> totopos.
+                    <span id="totopos"></span> </script> totopos.
                 </p>
 
 
@@ -269,39 +283,46 @@
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="1º passo" aria-label="1º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">1</span>Licúa
-                            los frijoles con el caldo de frijol hasta que estén bien molidos.</dd>
+                            los frijoles con el caldo de frijol hasta que estén bien molidos.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="2º passo" aria-label="2º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">2</span>Calienta
-                            una olla a fuego medio y coloca la manteca de cerdo.</dd>
+                            una olla a fuego medio y coloca la manteca de cerdo.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="3º passo" aria-label="3º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">3</span>Agrega
-                            la cebolla finamente picada y fríe. Mueve hasta que tome un color dorado.</dd>
+                            la cebolla finamente picada y fríe. Mueve hasta que tome un color dorado.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="4º passo" aria-label="4º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">4</span>Incorpora
                             la mezcla de frijoles y agrega el Caldo De Vegetales Knorr® 100% Natural En Polvo. Baja la
-                            flama al mínimo.</dd>
+                            flama al mínimo.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="5º passo" aria-label="5º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">5</span>Mueve
-                            constantemente, para que no se pegue. Sazona.</dd>
+                            constantemente, para que no se pegue. Sazona.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="6º passo" aria-label="6º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">6</span>Te
                             darás cuenta que están listos cuando comience a espesar el caldo y los frijoles. Sírvelos
-                            con queso rallado encima y totopos para decorar.</dd>
+                            con queso rallado encima y totopos para decorar.
+                        </dd>
                         <dd
                             class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
                             <span alt="7º passo" aria-label="7º passo"
                                 class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">7</span>Deja
-                            enfriar un poco y ¡a comer!</dd>
+                            enfriar un poco y ¡a comer!
+                        </dd>
                     </dl>
                 </div>
             </div>

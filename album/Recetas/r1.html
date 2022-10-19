@@ -95,7 +95,7 @@
                                         d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                 </svg>
                                 &nbsp;
-                                <script>document.write(personas); </script>
+                                <span id="pre"></span>
                                 personas
                             </div>
                             <div class="col-md-auto">
@@ -190,8 +190,48 @@
                 if (inputPersonas <= 0) {
                     personas = 6;
                 }
-                //event.path[0].placeholder;
-                caculaCantidades();
+                if (personas != 6) {
+                multiplo = personas / 6;
+                
+            } else {
+                multiplo = 1;
+               
+            }
+            agua = 78 * multiplo;
+                hornear = 1 * multiplo;
+                maíz = 1 * multiplo;
+                harina = 2 * multiplo;
+                aceite = 1 * multiplo;
+                tomates = 8 * multiplo;
+                cebolla = .5 * multiplo;
+                ajo = 1 * multiplo;
+                serrano = 2 * multiplo;
+                cilantro = 1 * multiplo;
+                comino = .5 * multiplo;
+                knorr = 1 * multiplo;
+                chicharron = 2 * multiplo;
+                agua2 = 177 * multiplo;
+                aceite2 = 2 * multiplo;
+
+                document.getElementById('agua').innerHTML = agua;
+                document.getElementById('hornear').innerHTML = hornear;
+                document.getElementById('maíz').innerHTML = maíz;
+                document.getElementById('harina').innerHTML = harina;
+                document.getElementById('aceite').innerHTML = aceite;
+                document.getElementById('tomates').innerHTML = tomates;
+                document.getElementById('cebolla').innerHTML = cebolla;
+                document.getElementById('ajo').innerHTML = ajo;
+                document.getElementById('serrano').innerHTML = serrano;
+                document.getElementById('cilantro').innerHTML = cilantro;
+                document.getElementById('comino').innerHTML = comino;
+                document.getElementById('knorr').innerHTML = knorr;
+                document.getElementById('chicharron').innerHTML = chicharron;
+                document.getElementById('agua2').innerHTML = agua2;
+                document.getElementById('aceite2').innerHTML = aceite2;
+                document.getElementById('per').innerHTML = personas;
+
+
+                
 
             }
             );
@@ -201,48 +241,7 @@
 
 
     <!-- prueba-->
-    <script>
-        function caculaCantidades() {
-            if (personas != 6) {
-                multiplo = personas / 6;
-                agua = 78 * multiplo;
-                hornear = 1 * multiplo;
-                maíz = 1 * multiplo;
-                harina = 2 * multiplo;
-                aceite = 1 * multiplo;
-                tomates = 8 * multiplo;
-                cebolla = .5 * multiplo;
-                ajo = 1 * multiplo;
-                serrano = 2 * multiplo;
-                cilantro = 1 * multiplo;
-                comino = .5 * multiplo;
-                knorr = 1 * multiplo;
-                chicharron = 2 * multiplo;
-                agua2 = 177 * multiplo;
-                aceite2 = 2 * multiplo;
-            } else {
-                multiplo = 1;
-                agua = 78 * multiplo;
-                hornear = 1 * multiplo;
-                maíz = 1 * multiplo;
-                harina = 2 * multiplo;
-                aceite = 1 * multiplo;
-                tomates = 8 * multiplo;
-                cebolla = .5 * multiplo;
-                ajo = 1 * multiplo;
-                serrano = 2 * multiplo;
-                cilantro = 1 * multiplo;
-                comino = .5 * multiplo;
-                knorr = 1 * multiplo;
-                chicharron = 2 * multiplo;
-                agua2 = 177 * multiplo;
-                aceite2 = 2 * multiplo;
-            }
-        }
-        caculaCantidades();
-
-
-    </script>
+    
 
     <div style="text-align:center" class="con">
 
@@ -255,60 +254,62 @@
                     Para la masa:
                 </h4>
                 <p>
-                    <script>document.write(agua); 
-                    </script> ml de agua.
+                    <span id="agua"></span>
+                    ml de agua.
                 </p>
                 <p>
-                    <script>document.write(hornear); </script> cuharada de polvo para hornear.
+                    <span id="hornear"></span> cuharada de polvo para hornear.
                 </p>
                 <p>
-                    <script>document.write(maíz); </script> kilogramo de masa de maíz nixtamalizado.
+                    <span id="maíz"></span> kilogramo de masa de maíz nixtamalizado.
                 </p>
                 <p>
-                    <script>document.write(harina); </script> cucharadas de harina de trigo.
+                    <span id="harina"></span>
+                    cucharadas de harina de trigo.
                 </p>
                 <p>
-                    <script>document.write(aceite); </script> cucharada de aceite.
+                    <span id="aceite"></span>
+                    cucharada de aceite.
                 </p>
                 <h4 style="color: #4577C1;">
                     Para la salsa verde:
                 </h4>
                 <p>
-                    <script>document.write(tomates); </script> tomates verdes.
+                    <span id="tomates"></span> tomates verdes.
                 </p>
                 <p>
-                    <script>document.write(cebolla); </script> cebolla blanca.
+                    <span id="cebolla"></span> cebolla blanca.
                 </p>
                 <p>
-                    <script>document.write(ajo); </script> diente de ajo.
+                    <span id="ajo"></span> diente de ajo.
                 </p>
                 <p>
-                    <script>document.write(serrano); </script> chiles serrano.
+                    <span id="serrano"></span> chiles serrano.
                 </p>
                 <p>
-                    <script>document.write(cilantro); </script> ramita de cilantro fresco.
+                    <span id="cilantro"></span> ramita de cilantro fresco.
                 </p>
                 <p>
-                    <script>document.write(comino); </script> cucharadita de comino molido.
+                   <span id="comino"></span> cucharadita de comino molido.
                 </p>
                 <p>
-                    <script>document.write(knorr); </script> cucharadita de Knorr En Polvo Caldo De
+                    <span id="knorr"></span> cucharadita de Knorr En Polvo Caldo De
                     Vegetales.
                 </p>
                 <p>
-                    <script>document.write(aceite); </script> cucharada de aceite.
+                    <span id="aceite"></span> cucharada de aceite.
                 </p>
                 <h4 style="color: #4577C1;">
                     Para las gorditas de chicharrón:
                 </h4>
                 <p>
-                    <script>document.write(chicharron); </script> tazas de chicharrón prensado.
+                    <span id="chicharron"></span> tazas de chicharrón prensado.
                 </p>
                 <p>
-                    <script>document.write(agua2); </script> ml de agua.
+                    <span id="agua2"></span> ml de agua.
                 </p>
                 <p>
-                    <script>document.write(aceite2); </script> cucharadas de aceite.
+                    <span id="aceite2"></span> cucharadas de aceite.
                 </p>
 
             </div>
